@@ -26,7 +26,7 @@
 #import <mach/host_info.h>
 #import <libkern/OSAtomic.h>
 #import <Availability.h>
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     #import <UIKit/UIDevice.h>
 #endif
 
@@ -142,7 +142,9 @@ static NSUInteger _numProcessors;
         mach_msg_type_number_t infoCount;
 
         infoCount = HOST_BASIC_INFO_COUNT;
-        host_info(mach_host_self(), HOST_BASIC_INFO, (host_info_t)&hostInfo, &infoCount);
+        #if TARGET_OS_IOS
+            host_info(mach_host_self(), HOST_BASIC_INFO, (host_info_t)&hostInfo, &infoCount);
+        #endif
 
         NSUInteger result = (NSUInteger)hostInfo.max_cpus;
         NSUInteger one    = (NSUInteger)1;
@@ -854,7 +856,7 @@ NSString * DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy) {
 //    dispatch_get_current_queue(void);
 //      __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_10_6,__MAC_10_9,__IPHONE_4_0,__IPHONE_6_0)
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
 
 // Compiling for iOS
 
