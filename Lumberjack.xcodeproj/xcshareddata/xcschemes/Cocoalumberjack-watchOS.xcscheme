@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E57AD37C1B64381800DAA71D"
                BuildableName = "Cocoalumberjack.framework"
-               BlueprintName = "Cocoalumberjack-watchOS"
+               BlueprintName = "CocoaLumberjack-watchOS"
                ReferencedContainer = "container:Lumberjack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E57AD37C1B64381800DAA71D"
             BuildableName = "Cocoalumberjack.framework"
-            BlueprintName = "Cocoalumberjack-watchOS"
+            BlueprintName = "CocoaLumberjack-watchOS"
             ReferencedContainer = "container:Lumberjack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E57AD37C1B64381800DAA71D"
             BuildableName = "Cocoalumberjack.framework"
-            BlueprintName = "Cocoalumberjack-watchOS"
+            BlueprintName = "CocoaLumberjack-watchOS"
             ReferencedContainer = "container:Lumberjack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

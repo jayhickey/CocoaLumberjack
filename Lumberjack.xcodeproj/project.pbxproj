@@ -91,7 +91,7 @@
 		DCB318D814ED6C3B001CFBEE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCB318D614ED6C3B001CFBEE /* Credits.rtf */; };
 		DCB318DB14ED6C3B001CFBEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB318DA14ED6C3B001CFBEE /* AppDelegate.m */; };
 		DCB318DE14ED6C3B001CFBEE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB318DC14ED6C3B001CFBEE /* MainMenu.xib */; };
-		E57AD3801B64381800DAA71D /* Cocoalumberjack-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD37F1B64381800DAA71D /* Cocoalumberjack-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E57AD3801B64381800DAA71D /* CocoaLumberjack-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E57AD37F1B64381800DAA71D /* CocoaLumberjack-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E57AD3851B64382B00DAA71D /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D89BA41994749300C180CF /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E57AD3861B64382B00DAA71D /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D89BA61994749300C180CF /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E57AD3871B64382B00DAA71D /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D89BA51994749300C180CF /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -258,8 +258,8 @@
 		DCB318D914ED6C3B001CFBEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCB318DA14ED6C3B001CFBEE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DCB318DD14ED6C3B001CFBEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E57AD37D1B64381800DAA71D /* Cocoalumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cocoalumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E57AD37F1B64381800DAA71D /* Cocoalumberjack-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cocoalumberjack-watchOS.h"; sourceTree = "<group>"; };
+		E57AD37D1B64381800DAA71D /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57AD37F1B64381800DAA71D /* CocoaLumberjack-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-watchOS.h"; sourceTree = "<group>"; };
 		E57AD3811B64381800DAA71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58078F91A01C92F008819CA /* CocoaLumberjackSwift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaLumberjackSwift-Info.plist"; sourceTree = "<group>"; };
 		E58079621A032F92008819CA /* DDLegacyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLegacyMacros.h; sourceTree = "<group>"; };
@@ -437,7 +437,7 @@
 				55CCBF0019BA679200957A39 /* SwiftTest */,
 				18F3BF601A81DD2E00692297 /* iOSSwiftTest */,
 				18F3BFF31A81E0C800692297 /* iOSLibStaticTest */,
-				E57AD37E1B64381800DAA71D /* Cocoalumberjack-watchOS */,
+				E57AD37E1B64381800DAA71D /* CocoaLumberjack-watchOS */,
 				DCB3185314EB418E001CFBEE /* Frameworks */,
 				DCB3185214EB418E001CFBEE /* Products */,
 			);
@@ -456,7 +456,7 @@
 				18F3BFC21A81DFA200692297 /* CocoaLumberjackSwift.framework */,
 				18F3BFD71A81E06E00692297 /* libCocoaLumberjack-iOS-Static.a */,
 				18F3BFF21A81E0C700692297 /* iOSLibStaticTest.app */,
-				E57AD37D1B64381800DAA71D /* Cocoalumberjack.framework */,
+				E57AD37D1B64381800DAA71D /* CocoaLumberjack.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -542,12 +542,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E57AD37E1B64381800DAA71D /* Cocoalumberjack-watchOS */ = {
+		E57AD37E1B64381800DAA71D /* CocoaLumberjack-watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				E57AD37F1B64381800DAA71D /* Cocoalumberjack-watchOS.h */,
+				E57AD37F1B64381800DAA71D /* CocoaLumberjack-watchOS.h */,
 				E57AD3811B64381800DAA71D /* Info.plist */,
 			);
+			name = "CocoaLumberjack-watchOS";
 			path = "Cocoalumberjack-watchOS";
 			sourceTree = "<group>";
 		};
@@ -616,7 +617,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E57AD3801B64381800DAA71D /* Cocoalumberjack-watchOS.h in Headers */,
+				E57AD3801B64381800DAA71D /* CocoaLumberjack-watchOS.h in Headers */,
 				E57AD3851B64382B00DAA71D /* CocoaLumberjack.h in Headers */,
 				E57AD3861B64382B00DAA71D /* DDLogMacros.h in Headers */,
 				E57AD3871B64382B00DAA71D /* DDAssertMacros.h in Headers */,
@@ -801,9 +802,9 @@
 			productReference = DCB318CA14ED6C3B001CFBEE /* FmwkTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E57AD37C1B64381800DAA71D /* Cocoalumberjack-watchOS */ = {
+		E57AD37C1B64381800DAA71D /* CocoaLumberjack-watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E57AD3841B64381800DAA71D /* Build configuration list for PBXNativeTarget "Cocoalumberjack-watchOS" */;
+			buildConfigurationList = E57AD3841B64381800DAA71D /* Build configuration list for PBXNativeTarget "CocoaLumberjack-watchOS" */;
 			buildPhases = (
 				E57AD37A1B64381800DAA71D /* Headers */,
 				E57AD3781B64381800DAA71D /* Sources */,
@@ -814,9 +815,9 @@
 			);
 			dependencies = (
 			);
-			name = "Cocoalumberjack-watchOS";
+			name = "CocoaLumberjack-watchOS";
 			productName = "Cocoalumberjack-watchOS";
-			productReference = E57AD37D1B64381800DAA71D /* Cocoalumberjack.framework */;
+			productReference = E57AD37D1B64381800DAA71D /* CocoaLumberjack.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -861,7 +862,7 @@
 				DCB3185014EB418E001CFBEE /* CocoaLumberjack */,
 				18F3BEF61A81D8B700692297 /* CocoaLumberjackSwift */,
 				18F3BF881A81DF5600692297 /* CocoaLumberjack-iOS */,
-				E57AD37C1B64381800DAA71D /* Cocoalumberjack-watchOS */,
+				E57AD37C1B64381800DAA71D /* CocoaLumberjack-watchOS */,
 				18F3BFA91A81DFA200692297 /* CocoaLumberjackSwift-iOS */,
 				18F3BFD61A81E06E00692297 /* CocoaLumberjack-iOS-Static */,
 				DCB318C914ED6C3B001CFBEE /* FmwkTest */,
@@ -1627,7 +1628,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deusty.CocoaLumberjack.Cocoalumberjack-watchOS";
-				PRODUCT_NAME = Cocoalumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -1655,7 +1656,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deusty.CocoaLumberjack.Cocoalumberjack-watchOS";
-				PRODUCT_NAME = Cocoalumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -1759,7 +1760,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E57AD3841B64381800DAA71D /* Build configuration list for PBXNativeTarget "Cocoalumberjack-watchOS" */ = {
+		E57AD3841B64381800DAA71D /* Build configuration list for PBXNativeTarget "CocoaLumberjack-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E57AD3821B64381800DAA71D /* Debug */,
